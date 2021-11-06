@@ -1,0 +1,9 @@
+<div>
+    <form class="ui form" [formGroup]="rsFormEnterId" (ngSubmit)="enteringId()">
+        <div class="field">
+            <label>Enter a Player Name</label>
+            <input type="text" id="playerid" placeholder="Player Id" formControlName="playerid">
+        </div>
+        <button class="ui blue button" type="submit">Submit</button>
+    </form>
+</div>

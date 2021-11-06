@@ -1,0 +1,15 @@
+<div>
+  <h1 class="ui header">Rock, Paper, Scissors Game</h1>
+</div>
+<div class="ui secondary pointing menu">
+  <a [ngClass]="ingame ? 'active item' : 'item'" routerLink='/'  (click)="updateState(ingame)">
+    Game
+  </a>
+  <a [ngClass]="!ingame ? 'active item' : 'item'" routerLink='/results' (click)="updateState(ingame)">
+    Results
+  </a>  
+</div>
+<div class="ui segment">
+  <p><router-outlet></router-outlet></p>
+</div>
+

@@ -1,0 +1,54 @@
+<div>
+  <button class="right floated ui red button" (click)="exitPlayer()">Exit</button>
+</div>
+<div>
+  <h1 class="ui header">Results for {{playerId}}</h1>
+</div>
+<div class="ui divider"></div>
+<div class="ui cards">
+  <div class="card">
+    <div class="content">
+      <div class="header">{{playerId}}</div>
+      <div class="meta">Player 1</div>
+      <div class="description">
+        <table class="ui celled padded table">
+          <tbody>
+            <tr>
+              <td>
+                <h3 class="ui center aligned header">Total rounds played</h3>
+              </td>
+              <td class="single line">
+                {{playerResults.totalRoundsPlayed}}
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h3 class="ui center aligned header">Total wins Player 1</h3>
+              </td>
+              <td class="single line">
+                {{playerResults.totalWins}}
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h3 class="ui center aligned header">Total wins Player 2</h3>
+              </td>
+              <td class="single line">
+                {{playerResults.totalLoses}}
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h3 class="ui center aligned header">Total Draws</h3>
+              </td>
+              <td class="single line">
+                {{playerResults.totalDraws}}
+              </td>
+            </tr>             
+                       
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
