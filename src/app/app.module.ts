@@ -10,6 +10,7 @@ import { RpsgameenteridComponent } from './pages/rpsgameenterid/rpsgameenterid.c
 import { HttpClientModule } from  '@angular/common/http';
 import { PlayerGuardGuard } from './guards/player-guard.guard';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { RpsgamemenuComponent } from './pages/rpsgamemenu/rpsgamemenu.component';
 
 const routes: Routes = [
   { path: '', component: RpsgameviewComponent ,  canActivate: [PlayerGuardGuard]},
@@ -23,7 +24,8 @@ const routes: Routes = [
     AppComponent,
     RpsgameviewComponent,
     RpsgameresultsComponent,
-    RpsgameenteridComponent
+    RpsgameenteridComponent,
+    RpsgamemenuComponent
   ],
   imports: [
     BrowserModule,

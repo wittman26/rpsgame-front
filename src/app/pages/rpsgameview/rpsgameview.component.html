@@ -1,44 +1,44 @@
-<div>
-    <button class="right floated ui red button" (click)="exitPlayer()">Exit</button>
-</div>
-<div>
-    <h1 class="ui header">Your game {{playerId}}</h1>
-</div>
-<div class="ui divider"></div>
-<div>
-    <button class="left attached green ui button" (click)="playRound()">
-        Play Round
-    </button>
-    <button class="right attached ui button" (click)="restartGame()">
-        Restart Game
-    </button>
-</div>
-<div>
-    <div class="ui horizontal statistic">
-        <div class="value">
-            {{ roundsplayed }}
+<app-rpsgamemenu [inGame]="true"></app-rpsgamemenu>
+<div class="ui segment">
+    <div>
+        <h1 class="ui header">Your game {{playerId}}</h1>
+    </div>
+    <div class="ui divider"></div>
+    <div>
+        <button class="left attached green ui button" (click)="playRound()">
+            Play Round
+        </button>
+        <button class="right attached ui button" (click)="restartGame()">
+            Restart Game
+        </button>
+    </div>
+    <div>
+        <div class="ui horizontal statistic">
+            <div class="value">
+                {{ roundsplayed }}
+            </div>
+            <div class="label">
+                Rounds Played
+            </div>
         </div>
-        <div class="label">
-            Rounds Played
-        </div>    
-      </div>
-</div>
+    </div>
 
-<div>
-    <table class="ui celled table">
-        <thead>
-            <tr>
-                <th>Player 1 Choice</th>
-                <th>Player 2 Choice</th>
-                <th>Result</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr *ngFor="let resul of listaResultados">
-                <td>{{ getLabelChoice(resul.player1Choice) }}</td>
-                <td>{{ getLabelChoice(resul.player2Choice) }}</td>
-                <td>{{ getLabelResult(resul.result) }}</td>
-            </tr>
-        </tbody>
-    </table>
+    <div>
+        <table class="ui celled table">
+            <thead>
+                <tr>
+                    <th>Player 1 Choice</th>
+                    <th>Player 2 Choice</th>
+                    <th>Result</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let resul of listaResultados">
+                    <td>{{ getLabelChoice(resul.player1Choice) }}</td>
+                    <td>{{ getLabelChoice(resul.player2Choice) }}</td>
+                    <td>{{ getLabelResult(resul.result) }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </div>

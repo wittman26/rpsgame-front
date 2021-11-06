@@ -27,12 +27,6 @@ export class RpsgameresultsComponent implements OnInit {
     this.getResults(); 
   }
 
-  exitPlayer(){
-    this.sessionserviceService.onRemoveItem(SESSION_CONSTANTS.PLAYERID);
-    this.playerId = null;
-    this.router.navigate(['enterid']);
-  } 
-
   getResults() {
     this.rpsserviceService.getParam('', this.playerId).subscribe(
       (response: any) => {

@@ -1,0 +1,25 @@
+<div class="ui segments">
+    <div class="ui segment">
+        <div>
+            <h1 class="ui header">Rock, Paper, Scissors Game</h1>
+        </div>
+    </div>
+
+    <div class="ui segment">
+        <div class="ui secondary pointing menu">
+            <a [ngClass]="inGame ? 'active item' : 'item'" routerLink='/'>
+                Game
+            </a>
+            <a [ngClass]="!inGame ? 'active item' : 'item'" routerLink='/results'>
+                Results
+            </a>
+            <div class="right menu">
+                <a class="ui item">
+                    <button class="right floated ui red button" (click)="exitPlayer()">Exit</button>
+                </a>
+            </div>
+        </div>
+    </div>    
+</div>
+
+
