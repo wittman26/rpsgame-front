@@ -1,4 +1,4 @@
-# RpsgameFront
+# Rpsgame Front
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.12.
 
@@ -6,9 +6,15 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Configuration file
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+This application calls an API Rest which uses an endpoint that can be configured in the following file:
+`/rpsgame-front/src/environments/environment.ts`
+
+By default, this file is configured with this values:
+```conf
+  rpsgameback: 'http://localhost:9191/rpsgame/api'
+```
 
 ## Build
 
