@@ -6,8 +6,7 @@ import { SESSION_CONSTANTS } from 'src/app/utils/session-constant';
 
 @Component({
   selector: 'app-rpsgameview',
-  templateUrl: './rpsgameview.component.html',
-  styleUrls: ['./rpsgameview.component.css']
+  templateUrl: './rpsgameview.component.html'
 })
 export class RpsgameviewComponent implements OnInit {
 

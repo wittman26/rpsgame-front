@@ -6,8 +6,7 @@ import { SESSION_CONSTANTS } from 'src/app/utils/session-constant';
 
 @Component({
   selector: 'app-rpsgameresults',
-  templateUrl: './rpsgameresults.component.html',
-  styleUrls: ['./rpsgameresults.component.css']
+  templateUrl: './rpsgameresults.component.html'
 })
 export class RpsgameresultsComponent implements OnInit {
   playerId: any = null;

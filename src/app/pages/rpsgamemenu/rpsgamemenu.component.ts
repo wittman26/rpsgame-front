@@ -5,8 +5,7 @@ import { SESSION_CONSTANTS } from 'src/app/utils/session-constant';
 
 @Component({
   selector: 'app-rpsgamemenu',
-  templateUrl: './rpsgamemenu.component.html',
-  styleUrls: ['./rpsgamemenu.component.css']
+  templateUrl: './rpsgamemenu.component.html'
 })
 export class RpsgamemenuComponent implements OnInit {
   playerId: any;

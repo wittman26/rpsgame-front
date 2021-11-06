@@ -6,8 +6,7 @@ import { SESSION_CONSTANTS } from 'src/app/utils/session-constant';
 
 @Component({
   selector: 'app-rpsgameenterid',
-  templateUrl: './rpsgameenterid.component.html',
-  styleUrls: ['./rpsgameenterid.component.css']
+  templateUrl: './rpsgameenterid.component.html'
 })
 export class RpsgameenteridComponent implements OnInit {
 
