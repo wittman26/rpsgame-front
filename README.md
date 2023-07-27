@@ -2,6 +2,11 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.12.
 
+# Install in Docker
+
+docker build -t wittman26/rpsgame-front:latest .
+docker run -d -p 49169:80 wittman26/rpsgame-front:latest
+
 ## Important!!
 
 This application was built with **Node 14.18.1**; use this Node version to install dependencies before running. You can use **nvm** [NVM node versioner](https://github.com/coreybutler/nvm-windows/releases/tag/1.1.8) to install and use different versions of Node in a machine.
